@@ -1,0 +1,354 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<main>
+    <section class="section-about" id="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+               
+            </h2>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Objectives
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary u-margin-bottom-small"></h3>
+                <p class="paragraph">
+                    To apply all the skills and learning I have gained in my previous work experiences and my skills
+                    gained from school. Professional fullstack developer.
+                </p>
+
+                @* <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3> *@
+                @* <p class="paragraph"> *@
+                @*     Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam. *@
+                @* </p> *@
+
+                @* <a href="#" class="btn-text">Learn more &rarr;</a> *@
+            </div>
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary u-margin-bottom-small">Tech Skills</h3>
+                <p class="paragraph">
+                    <i class="fab fa-html5"><span>HTML<span/></i>
+                    <i class="fab fa-css3-alt"> CSS</i> 
+                    <i class="fas fa-code"> C#</i>   
+                    <i class="fab fa-react"> React</i>
+                </p>
+                <p class="paragraph">
+                <i class="fas fa-laptop-code"> asp.net</i>
+                <i class="fas fa-database"> SQL</i>   <!-- SQL -->
+                    <i class="fas fa-coffee"> Java</i>  <!-- Java -->
+
+                <i class="fas fa-network-wired"> CCNA (expired)</i> <!-- CCNA -->
+                </p>
+            </div>
+         
+        </div>
+       
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Work Experience
+                </h2>
+            </div>
+
+
+        @await Component.InvokeAsync("ExpLists", new { count = 9 })
+
+
+
+
+
+
+    </section>
+
+
+
+    <section class="section-tours" id="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+               Projects
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--1">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--1">Simple POS</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>Create Product</li>
+                                <li>Create Discounts</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-only"></p>
+                                <p class="card__price-value">Check</p>
+                            </div>
+                            <a href="#popup" class="btn btn--white">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--2">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--2">Number To Word Converter</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li></li>
+                                <li>Convert Number</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="card__side card__side--back card__side--back-2">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-only"></p>
+                                <p class="card__price-value">Check</p>
+                            </div>
+                            <a href="#popup1" class="btn btn--white">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--3">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--3">Portfolio</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li></li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="card__side card__side--back card__side--back-3">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-only"></p>
+                                <p class="card__price-value">Check</p>
+                            </div>
+                            <a href="#popup2" class="btn btn--white">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+            <a href="#" class="btn btn--green">Home</a>
+        </div>
+    </section>
+
+    @* <section class="section-stories"> *@
+    @*     <div class="bg-video"> *@
+    @*         <video class="bg-video__content" autoplay muted loop> *@
+    @*             <source src="img/video.mp4" type="video/mp4"> *@
+    @*             <source src="img/video.webm" type="video/webm"> *@
+    @*             Your browser is not supported! *@
+    @*         </video> *@
+    @*     </div> *@
+
+    @*     <div class="u-center-text u-margin-bottom-big"> *@
+    @*         <h2 class="heading-secondary"> *@
+    @*             We make people genuinely happy *@
+    @*         </h2> *@
+    @*     </div> *@
+
+    @*     <div class="row"> *@
+    @*         <div class="story"> *@
+    @*             <figure class="story__shape"> *@
+    @*                 <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img"> *@
+    @*                 <figcaption class="story__caption">Mary Smith</figcaption> *@
+    @*             </figure> *@
+    @*             <div class="story__text"> *@
+    @*                 <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3> *@
+    @*                 <p> *@
+    @*                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur *@
+    @*                     ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero *@
+    @*                     repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. *@
+    @*                 </p> *@
+    @*             </div> *@
+    @*         </div> *@
+    @*     </div> *@
+
+    @*     <div class="row"> *@
+    @*         <div class="story"> *@
+    @*             <figure class="story__shape"> *@
+    @*                 <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img"> *@
+    @*                 <figcaption class="story__caption">Jack Wilson</figcaption> *@
+    @*             </figure> *@
+    @*             <div class="story__text"> *@
+    @*                 <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3> *@
+    @*                 <p> *@
+    @*                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur *@
+    @*                     ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero *@
+    @*                     repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. *@
+    @*                 </p> *@
+    @*             </div> *@
+    @*         </div> *@
+    @*     </div> *@
+
+    @*     <div class="u-center-text u-margin-top-huge"> *@
+    @*         <a href="#" class="btn-text">Read all stories &rarr;</a> *@
+    @*     </div> *@
+    @* </section> *@
+
+    @* <section class="section-book"> *@
+    @*     <div class="row"> *@
+    @*         <div class="book"> *@
+    @*             <div class="book__form"> *@
+    @*                 <form action="#" class="form"> *@
+    @*                     <div class="u-margin-bottom-medium"> *@
+    @*                         <h2 class="heading-secondary"> *@
+    @*                             Start booking now *@
+    @*                         </h2> *@
+    @*                     </div> *@
+
+    @*                     <div class="form__group"> *@
+    @*                         <input type="text" class="form__input" placeholder="Full name" id="name" required> *@
+    @*                         <label for="name" class="form__label">Full name</label> *@
+    @*                     </div> *@
+
+    @*                     <div class="form__group"> *@
+    @*                         <input type="email" class="form__input" placeholder="Email address" id="email" required> *@
+    @*                         <label for="email" class="form__label">Email address</label> *@
+    @*                     </div> *@
+
+    @*                     <div class="form__group u-margin-bottom-medium"> *@
+    @*                         <div class="form__radio-group"> *@
+    @*                             <input type="radio" class="form__radio-input" id="small" name="size"> *@
+    @*                             <label for="small" class="form__radio-label"> *@
+    @*                                 <span class="form__radio-button"></span> *@
+    @*                                 Small tour group *@
+    @*                             </label> *@
+    @*                         </div> *@
+
+    @*                         <div class="form__radio-group"> *@
+    @*                             <input type="radio" class="form__radio-input" id="large" name="size"> *@
+    @*                             <label for="large" class="form__radio-label"> *@
+    @*                                 <span class="form__radio-button"></span> *@
+    @*                                 Large tour group *@
+    @*                             </label> *@
+    @*                         </div> *@
+    @*                     </div> *@
+
+    @*                     <div class="form__group"> *@
+    @*                         <button class="btn btn--green">Next step &rarr;</button> *@
+    @*                     </div> *@
+    @*                 </form> *@
+    @*             </div> *@
+    @*         </div> *@
+    @*     </div> *@
+    @* </section> *@
+</main>
+
+<div class="popup" id="popup">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="img/nat-5.jpg" alt="Tour photo" class="popup__img">
+            <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">Simple POS</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Application Details</h3>
+            <p class="popup__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
+                amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
+                sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
+                gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+                Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
+                vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
+                vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
+                euismod nisi porta.
+            </p>
+            <a href="#" class="btn btn--green">Demo</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup1">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="img/nat-6.jpg" alt="Tour photo" class="popup__img">
+            <img src="img/nat-12.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">Number To Word Convert</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Application Details</h3>
+            <p class="popup__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
+                amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
+                sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
+                gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+                Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
+                vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
+                vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
+                euismod nisi porta.
+            </p>
+            <a href="#" class="btn btn--green">Demo</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popup2">
+    <div class="popup__content">
+        <div class="popup__left">
+            <img src="img/nat-7.jpg" alt="Tour photo" class="popup__img">
+            <img src="img/nat-13.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">Portfolio</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Application Details</h3>
+            <p class="popup__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
+                amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
+                sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
+                gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+                Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
+                vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
+                vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
+                euismod nisi porta.
+            </p>
+            <a href="#" class="btn btn--green">Demo</a>
+        </div>
+    </div>
+</div>
+

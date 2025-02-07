@@ -1,0 +1,36 @@
+﻿@model List<Portfolio.Model.ExpModel>
+
+    
+    @foreach (var m in Model)
+    {
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-m">@m.Position</h3>
+                        <p class="paragraph">
+                            @m.Company
+                        </p>
+                    </div>
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-m"></h3>
+                        <p class="paragraph">
+                           @m.Year
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary u-margin-bottom-m">@(m.Company == "RipeConcepts" ? "Tech Stack" : "")</h3>
+                <p class="paragraph">
+                    @m.Stack
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <hr />
+        </div>
+       
+    }
+
